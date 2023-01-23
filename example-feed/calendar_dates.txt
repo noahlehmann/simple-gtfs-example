@@ -1,0 +1,9 @@
+service_id,date,exception_type
+mon_tue_wed_thu_fri,20231224,2
+sat_sun,20231224,1
+mon_tue_wed_thu_fri,20231231,2
+sat_sun,20231231,1
+mon_tue_wed_thu_fri,20241224,2
+sat_sun,20241224,1
+mon_tue_wed_thu_fri,20241231,2
+sat_sun,20241231,1

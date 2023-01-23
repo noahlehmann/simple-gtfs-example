@@ -1,0 +1,10 @@
+stop_id,stop_name,stop_lat,stop_lon,parent_station,location_type
+a,Stop A,41.404515,2.169844,,0
+b,Stop B,41.405475,2.169076,,0
+c,Stop C,41.405918,2.169696,,0
+d, Stop D,41.405252,2.170917,,1
+d1,Stop D South-East Facing,41.405410,2.170571,d,0
+d2,Stop D South-West Facing,41.405392,2.171008,d,0
+e,Stop E,41.404572,2.171696,,0
+f,Stop F,41.405198,2.173247,,0
+g,Stop G,41.406161,2.172392,,0

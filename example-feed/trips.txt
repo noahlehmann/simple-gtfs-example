@@ -1,0 +1,5 @@
+trip_id,route_id,service_id
+t1,1,mon_tue_wed_thu_fri
+t2,2,mon_tue_wed_thu_fri
+t1_we,1,sat_sun
+t2_we,2,sat_sun

@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version,feed_contact_url,feed_contact_email
+Noah Lehmann,https://github.com/noahlehmann,en,20230101,20241231,0.0.1,https://github.com/noahlehmann/simple-gtfs-example/issues,noahlehmann@github.com
