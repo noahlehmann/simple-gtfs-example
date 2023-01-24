@@ -1,0 +1,28 @@
+name: Validate GTFS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ${{ matrix.os }}
+    container: amazoncorretto:17-alpine
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Copy files
+      run: cp -a example-feed/. gtfs/
+    - name: Zip files
+      run: zip -j gtfs.zip gtfs/*.txt
+    - name: Download validator
+      run: curl --request GET -sL 'https://github.com/MobilityData/gtfs-validator/releases/download/v4.0.0/gtfs-validator-4.0.0-cli.jar' --output './validator.jar'
+    - name: Validate GTFS
+      run: java -jar validator.jar -i gtfs.zip -o validation
+    - name: Check output
+      run: jq '.notices | length == 0' validation/report.json > output.txt
+    - name: check the output file
+      run: |
+        if grep -q "false" output.txt; then exit 1; fi
