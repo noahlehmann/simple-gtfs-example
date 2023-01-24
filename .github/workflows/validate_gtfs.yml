@@ -14,7 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     - name: Install Dependencies
-      run: apk install --no-cache zip jq curl
+      run: apk add --no-cache zip jq curl
     - name: Copy files
       run: cp -a example-feed/. gtfs/
     - name: Zip files
