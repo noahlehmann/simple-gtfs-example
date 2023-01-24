@@ -7,7 +7,7 @@ on:
 
 jobs:
   validate:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     container: amazoncorretto:17-alpine
 
     steps:
